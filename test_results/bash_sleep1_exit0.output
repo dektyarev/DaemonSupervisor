@@ -1,0 +1,53 @@
+[root@ip-172-31-86-93 ~]# ./supervisor.py --check-interval=1 --num-attempts=3 --seconds-between-restarts=3 "bash -c \"sleep 1 && exit 0\""
+Starting Daemon Supervisor
+[root@ip-172-31-86-93 ~]# tail -n 100 -f /var/log/supervisor_daemon.log
+2019-09-22 13:25:25,270 - supervisor_daemon - INFO - Checking status of process PID: None running False
+2019-09-22 13:25:25,270 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:25,270 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:25,273 - supervisor_daemon - INFO - Started new process with PID: 22965
+2019-09-22 13:25:26,274 - supervisor_daemon - INFO - Checking status of process PID: 22965 running True
+2019-09-22 13:25:27,276 - supervisor_daemon - INFO - Checking status of process PID: 22965 running False
+2019-09-22 13:25:27,276 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:27,277 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:27,279 - supervisor_daemon - INFO - Started new process with PID: 22967
+2019-09-22 13:25:28,281 - supervisor_daemon - INFO - Checking status of process PID: 22967 running True
+2019-09-22 13:25:29,283 - supervisor_daemon - INFO - Checking status of process PID: 22967 running False
+2019-09-22 13:25:29,283 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:29,283 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:29,286 - supervisor_daemon - INFO - Started new process with PID: 22969
+2019-09-22 13:25:30,288 - supervisor_daemon - INFO - Checking status of process PID: 22969 running True
+2019-09-22 13:25:31,290 - supervisor_daemon - INFO - Checking status of process PID: 22969 running False
+2019-09-22 13:25:31,290 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:31,290 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:31,293 - supervisor_daemon - INFO - Started new process with PID: 22972
+2019-09-22 13:25:32,295 - supervisor_daemon - INFO - Checking status of process PID: 22972 running True
+2019-09-22 13:25:33,296 - supervisor_daemon - INFO - Checking status of process PID: 22972 running False
+2019-09-22 13:25:33,297 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:33,297 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:33,300 - supervisor_daemon - INFO - Started new process with PID: 22974
+2019-09-22 13:25:34,302 - supervisor_daemon - INFO - Checking status of process PID: 22974 running True
+2019-09-22 13:25:35,303 - supervisor_daemon - INFO - Checking status of process PID: 22974 running False
+2019-09-22 13:25:35,304 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:35,304 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:35,307 - supervisor_daemon - INFO - Started new process with PID: 22976
+2019-09-22 13:25:36,308 - supervisor_daemon - INFO - Checking status of process PID: 22976 running True
+2019-09-22 13:25:37,310 - supervisor_daemon - INFO - Checking status of process PID: 22976 running False
+2019-09-22 13:25:37,311 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:37,311 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:37,314 - supervisor_daemon - INFO - Started new process with PID: 22978
+2019-09-22 13:25:38,315 - supervisor_daemon - INFO - Checking status of process PID: 22978 running True
+2019-09-22 13:25:39,317 - supervisor_daemon - INFO - Checking status of process PID: 22978 running False
+2019-09-22 13:25:39,317 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:39,318 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:39,321 - supervisor_daemon - INFO - Started new process with PID: 22980
+2019-09-22 13:25:40,322 - supervisor_daemon - INFO - Checking status of process PID: 22980 running True
+2019-09-22 13:25:41,324 - supervisor_daemon - INFO - Checking status of process PID: 22980 running False
+2019-09-22 13:25:41,324 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:41,324 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:41,328 - supervisor_daemon - INFO - Started new process with PID: 22982
+2019-09-22 13:25:42,329 - supervisor_daemon - INFO - Checking status of process PID: 22982 running True
+2019-09-22 13:25:43,331 - supervisor_daemon - INFO - Checking status of process PID: 22982 running False
+2019-09-22 13:25:43,331 - supervisor_daemon - INFO - Attempting to run command "bash -c "sleep 1 && exit 0""...
+2019-09-22 13:25:43,331 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:25:43,334 - supervisor_daemon - INFO - Started new process with PID: 22984
+^C

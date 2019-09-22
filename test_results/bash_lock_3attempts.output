@@ -1,0 +1,29 @@
+[root@ip-172-31-86-93 ~]# ./supervisor.py --check-interval=1 --num-attempts=3 --seconds-between-restarts=3 "bash -c \"if [ -f lock ]; then exit 1; fi; sleep 10 && touch lock && exit 1\""
+Starting Daemon Supervisor
+[root@ip-172-31-86-93 ~]# tail -n 100 -f /var/log/supervisor_daemon.log
+2019-09-22 13:32:59,703 - supervisor_daemon - INFO - Checking status of process PID: None running False
+2019-09-22 13:32:59,704 - supervisor_daemon - INFO - Attempting to run command "bash -c "if [ -f lock ]; then exit 1; fi; sleep 10 && touch lock && exit 1""...
+2019-09-22 13:32:59,704 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:32:59,707 - supervisor_daemon - INFO - Started new process with PID: 23231
+2019-09-22 13:33:00,708 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:01,710 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:02,712 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:03,714 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:04,716 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:05,718 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:06,719 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:07,721 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:08,723 - supervisor_daemon - INFO - Checking status of process PID: 23231 running True
+2019-09-22 13:33:09,725 - supervisor_daemon - INFO - Checking status of process PID: 23231 running False
+2019-09-22 13:33:09,725 - supervisor_daemon - INFO - Attempting to run command "bash -c "if [ -f lock ]; then exit 1; fi; sleep 10 && touch lock && exit 1""...
+2019-09-22 13:33:09,725 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:33:09,728 - supervisor_daemon - ERROR - Process 23235 was not found
+2019-09-22 13:33:09,728 - supervisor_daemon - ERROR - Failed to run process
+2019-09-22 13:33:12,731 - supervisor_daemon - INFO - Attempt #2
+2019-09-22 13:33:12,735 - supervisor_daemon - ERROR - Process 23236 was not found
+2019-09-22 13:33:12,735 - supervisor_daemon - ERROR - Failed to run process
+2019-09-22 13:33:15,737 - supervisor_daemon - INFO - Attempt #3
+2019-09-22 13:33:15,740 - supervisor_daemon - ERROR - Process 23237 was not found
+2019-09-22 13:33:15,740 - supervisor_daemon - ERROR - Failed to run process
+2019-09-22 13:33:18,744 - supervisor_daemon - ERROR - Process failed to start after 3 attempt(s).
+2019-09-22 13:33:18,744 - supervisor_daemon - INFO - Daemon Supervisor stopped

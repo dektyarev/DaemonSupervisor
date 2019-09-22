@@ -1,0 +1,51 @@
+[root@ip-172-31-86-93 ~]# ./supervisor.py --check-interval=1 --num-attempts=3 --seconds-between-restarts=3 "sh -c \"sleep 10 && exit 1\""
+Starting Daemon Supervisor
+[root@ip-172-31-86-93 ~]# tail -n 100 -f /var/log/supervisor_daemon.log
+2019-09-22 13:17:55,655 - supervisor_daemon - INFO - Checking status of process PID: None running False
+2019-09-22 13:17:55,656 - supervisor_daemon - INFO - Attempting to run command "sh -c "sleep 10 && exit 1""...
+2019-09-22 13:17:55,656 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:17:55,659 - supervisor_daemon - INFO - Started new process with PID: 22807
+2019-09-22 13:17:56,660 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:17:57,662 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:17:58,664 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:17:59,666 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:00,668 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:01,670 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:02,671 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:03,673 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:04,675 - supervisor_daemon - INFO - Checking status of process PID: 22807 running True
+2019-09-22 13:18:05,677 - supervisor_daemon - INFO - Checking status of process PID: 22807 running False
+2019-09-22 13:18:05,677 - supervisor_daemon - INFO - Attempting to run command "sh -c "sleep 10 && exit 1""...
+2019-09-22 13:18:05,677 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:18:05,680 - supervisor_daemon - INFO - Started new process with PID: 22809
+2019-09-22 13:18:06,682 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:07,684 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:08,686 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:09,687 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:10,689 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:11,690 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:12,692 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:13,694 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:14,696 - supervisor_daemon - INFO - Checking status of process PID: 22809 running True
+2019-09-22 13:18:15,698 - supervisor_daemon - INFO - Checking status of process PID: 22809 running False
+2019-09-22 13:18:15,698 - supervisor_daemon - INFO - Attempting to run command "sh -c "sleep 10 && exit 1""...
+2019-09-22 13:18:15,698 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:18:15,701 - supervisor_daemon - INFO - Started new process with PID: 22812
+2019-09-22 13:18:16,703 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:17,705 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:18,707 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:19,709 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:20,711 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:21,712 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:22,714 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:23,716 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:24,718 - supervisor_daemon - INFO - Checking status of process PID: 22812 running True
+2019-09-22 13:18:25,720 - supervisor_daemon - INFO - Checking status of process PID: 22812 running False
+2019-09-22 13:18:25,720 - supervisor_daemon - INFO - Attempting to run command "sh -c "sleep 10 && exit 1""...
+2019-09-22 13:18:25,720 - supervisor_daemon - INFO - Attempt #1
+2019-09-22 13:18:25,723 - supervisor_daemon - INFO - Started new process with PID: 22814
+2019-09-22 13:18:26,725 - supervisor_daemon - INFO - Checking status of process PID: 22814 running True
+2019-09-22 13:18:27,727 - supervisor_daemon - INFO - Checking status of process PID: 22814 running True
+2019-09-22 13:18:28,729 - supervisor_daemon - INFO - Checking status of process PID: 22814 running True
+2019-09-22 13:18:29,730 - supervisor_daemon - INFO - Checking status of process PID: 22814 running True
+2019-09-22 13:18:30,732 - supervisor_daemon - INFO - Checking status of process PID: 22814 running True
